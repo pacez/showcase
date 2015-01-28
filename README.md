@@ -14,6 +14,11 @@
   <li>利用$sce服务的trustAsHtml方法，插入包含html代码的数据。</li>
 </ol>
 
+可优化点：
+<ol>
+  <li>检索性能，目前输入字符长度 > 1 即发生fitler行为，更为优秀的方案我认为是输入结束一定时间后触发filter。</li>
+</ol>
+
 
 访问地址：<a href="http://pacez.github.io/showcase/web/index.html">http://pacez.github.io/showcase/web/index.html</a>
 
