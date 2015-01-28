@@ -19,8 +19,8 @@ var buildPath={
     var that=this;
     return [
       that.bower+'/html5shiv/dist/html5shiv.min.js',
-      that.bower+'/angular/angular.min.js',
-      that.bower+'/angular-route/angular-route.min.js',
+      that.bower+'/angular/angular.js',
+      that.bower+'/angular-route/angular-route.js',
       that.bower+'/jquery/dist/jquery.min.js'
     ];
   }
