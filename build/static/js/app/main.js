@@ -93,9 +93,7 @@ app.filter('hightLightStr', ['$sce', function ($sce) {
   return function (text,query) {
     if(query && query.length > 1){
       text=ui.hightLightStr(text,query);
-      return $sce.trustAsHtml(text);
-    }else{
-      return $sce.trustAsHtml(text);
     }
+    return $sce.trustAsHtml(text);
   };
 }]);
