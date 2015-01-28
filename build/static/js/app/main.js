@@ -26,7 +26,7 @@ app.controller('control', function($scope) {
 //指令
 app.directive('tmpHeader', function($document) {
   var options={
-    templateUrl: '/build/static/template/header.html',
+    templateUrl: '/showcase/build/static/template/header.html',
     replace: true
   };
   return options;
@@ -35,7 +35,7 @@ app.directive('tmpHeader', function($document) {
 
 app.directive('tmpFooter', function() {
   var options={
-    templateUrl: '/build/static/template/footer.html',
+    templateUrl: '/showcase/build/static/template/footer.html',
     replace: true
   };
   return options;

@@ -21,8 +21,7 @@ var buildPath={
       that.bower+'/html5shiv/dist/html5shiv.min.js',
       that.bower+'/angular/angular.min.js',
       that.bower+'/angular-route/angular-route.min.js',
-      that.bower+'/jquery/dist/jquery.min.js',
-      that.bower+'/requirejs/require.js'
+      that.bower+'/jquery/dist/jquery.min.js'
     ];
   }
 };
@@ -57,7 +56,7 @@ gulp.task('watch',function(){
 });
 
 //构建开发任务
-gulp.task('dev',['clean-build','bower-to-lib','watch'],function(){})
+gulp.task('build',['clean-build','bower-to-lib','build-less','watch'],function(){})
 
 //需要发布的文件
 var releaseFile=[
