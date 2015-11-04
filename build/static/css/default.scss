@@ -1,0 +1,140 @@
+@import "css3-mixins";
+/* default style begin */
+$bg-color: #FFF;
+$default-border-color: #BABABA;
+$font-color: #333;
+$layout-bg-color: #F4F4F4;
+$images-path: "../images";
+$white: #FFF;
+$borderLight: #eee;
+
+
+p {margin: 0; padding: 0;}
+input[placeholder], [placeholder], *[placeholder] {
+  color: #fff
+}
+/* layout */
+body {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+.header {
+  position: relative;
+  color: $white;
+  padding-bottom: .5rem;
+  .logo {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out 0s;
+  }
+  h1 {
+    margin: 1.5rem 0 0;
+  }
+  .input-field {
+    #search {
+      width: 100%;
+      border-bottom: 1px solid $borderLight;
+      &:hover,&:focus {
+        font-size: 1.5rem;
+      }
+    }
+    i {
+      top: 5px;
+      &.prefix.active {
+        color: #bbdefb
+      }
+    }
+  }
+  .about-us {
+    transition: all 0.5s ease-out 0s;
+    display: inline-block;
+    border: 1px solid #90caf9;
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+    background: url("http://photo.xuefo.net/user/editor5/asp/upload//2014223/13931283537056.jpg") no-repeat center center;
+    background-size: 110% 110%;
+  }
+  &:hover {
+    .logo {
+      @include css3-prefix(text-shadow,0 0 .6rem #FFFFFF);
+    }
+    .about-us {
+      @include css3-prefix(box-shadow,0 0 .6rem #FFFFFF);
+    }
+  }
+}
+
+footer.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 30px;
+  border-top: 1px solid #90caf9;
+  text-align: center;
+  padding-top: 0;
+  z-index: 3;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.case-list {
+  overflow: hidden;
+  .case {
+    padding: 10px;
+    float: left;
+    border: 1px solid #BABABA;
+    overflow: hidden;
+    p {
+      overflow: hidden;
+      > b {
+        float: left;
+        text-align: right;
+      }
+      > span {
+        float: left;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.ui-hightlight {
+  font-weight: bold;
+  color: red;
+}
+
+/* reset */
+.card.blue  {
+  width: 100%;
+  .card-action {
+    border-color: #90caf9;
+    a {
+      text-transform: inherit;
+      color: #1de9b6;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &:hover {
+    background-color: #1976d2!important;
+  }
+}
+
+.case-info {
+  &.row {
+    padding-bottom: 0;
+    .col {
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+    }
+  }
+}
+
+
