@@ -13,6 +13,7 @@
   <li>利用内置filter完成内容检索。</li>
   <li>自己扩展filter:hightLightStr完成关键字高亮。</li>
   <li>利用$sce服务的trustAsHtml方法，插入包含html代码的数据。</li>
+  <li>结合materialize进行响应式开发，添加css3动态效果</li>
 </ol>
 
 可优化点：
@@ -22,5 +23,4 @@
 </ol>
 
 
-访问地址：<a href="http://pacez.github.io/showcase/web/index.html">http://pacez.github.io/showcase/web/index.html</a>
-
+访问地址：<a href="http://pacez.github.io/showcase/build/web/index.html">http://pacez.github.io/showcase/build/web/index.html</a>
