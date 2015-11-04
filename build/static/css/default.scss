@@ -24,7 +24,7 @@ body {
   color: $white;
   padding-bottom: .5rem;
   .logo {
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: all 0.5s ease-out 0s;
   }
@@ -35,21 +35,27 @@ body {
     #search {
       width: 100%;
       border-bottom: 1px solid $borderLight;
-      &:hover,&:focus {
-        font-size: 1.5rem;
-      }
     }
     i {
       top: 5px;
+      transition: all 0.5s ease-out 0s;
       &.prefix.active {
-        color: #bbdefb
+        color: #FFF
+      }
+    }
+
+    &:hover,&:focus {
+      #search {
+       font-size: 1.5rem;
+      }
+      i {
+        @include css3-prefix(text-shadow,0 0 .6rem #FFF);
       }
     }
   }
   .about-us {
     transition: all 0.5s ease-out 0s;
     display: inline-block;
-    border: 1px solid #90caf9;
     background-color: red;
     width: 3rem;
     height: 3rem;
@@ -59,10 +65,10 @@ body {
   }
   &:hover {
     .logo {
-      @include css3-prefix(text-shadow,0 0 .6rem #FFFFFF);
+      @include css3-prefix(text-shadow,0 0 1rem #FFF);
     }
     .about-us {
-      @include css3-prefix(box-shadow,0 0 .6rem #FFFFFF);
+      @include css3-prefix(box-shadow,0 0 1rem #FFF);
     }
   }
 }
@@ -117,6 +123,7 @@ footer.page-footer {
     a {
       text-transform: inherit;
       color: #1de9b6;
+      margin-right: 0;
       &:hover {
         text-decoration: underline;
       }
@@ -131,8 +138,7 @@ footer.page-footer {
   &.row {
     padding-bottom: 0;
     .col {
-      padding-top: .2rem;
-      padding-bottom: .2rem;
+      padding: .2rem 0;
     }
   }
 }
